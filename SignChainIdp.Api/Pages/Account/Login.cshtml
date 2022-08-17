@@ -1,0 +1,42 @@
+@page
+@model LoginModel
+
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_LayoutSimple";
+}
+<link rel="stylesheet" href="~/css/style@((string.IsNullOrEmpty(Model.ClientId))?( $".{Model.ClientId}" ):"").css" />
+<div class="pane">
+  <div class="pane__content" >
+    <h4 class="label-style">Use a local account to log in. (@Localizer["English"]) </h4>
+    <form class="form" id="account" method="post">
+      <div class="form__validation-summary" asp-validation-summary="All"></div>
+      <div class="form__group">
+        <label asp-for="Input.Username">Username</label>
+        <input asp-for="Input.Username" />
+        <span asp-validation-for="Input.Username"></span>
+      </div>
+      <div class="form__group">
+        <label asp-for="Input.Password">Password</label>
+        <input asp-for="Input.Password" />
+        <span asp-validation-for="Input.Password"></span>
+      </div>
+      <div class="form__group">
+        <div>
+          <label asp-for="Input.RememberMe">
+            <input asp-for="Input.RememberMe" />
+            Remember Me
+          </label>
+        </div>
+      </div>
+      <div>
+        <button type="submit">Log in</button>
+      </div>
+    </form>
+  </div>
+  <div class="pane__aside">
+  </div>
+</div>

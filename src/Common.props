@@ -1,0 +1,18 @@
+<Project>
+
+  <PropertyGroup>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Aldiger</Authors>
+    <Company>Aldiger</Company>
+    <RepositoryType>git</RepositoryType>
+    <Copyright>2022 Aldiger</Copyright>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <FileVersion>$(Version)</FileVersion>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>IdentityServerProvider.Api</PackageTags>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>

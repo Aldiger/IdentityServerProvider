@@ -1,0 +1,95 @@
+TODO:
+
+- load options.Permissions from database instead of configuring it
+
+
+- client refactoring
+  - split identity, openiddict => create libs
+  - better Client deployment
+    - introduce deploy.js
+    - check server stylings not removed
+
+
+- go full razor pages
+  - https://github.com/openiddict/openiddict-samples/tree/dev/samples/Contruum/Contruum.Server
+
+
+- organize APIs a bit more by feature
+  - i.e. identity -> AccountController
+    - AccountController
+    - RegisterUserController
+    - ChangePasswordController
+
+
+- extract logic in AuthorizationController to service
+
+
+- structuring
+  - suite (openiddict-ui-suite)
+    - Core
+    - Infrastructure
+    - Infrastructure.EF
+    - Infrastructure.EF.Sqlite
+    - Api (WebApplication)
+  - identity (openiddict-ui-identity)
+    - Core
+    - Infrastructure.EF
+    - API
+  - openiddict (openiddict-ui)
+    - Core
+    - Infrastructure.EF
+    - Api
+  - policy (openiddict-ui-policy)
+    - Core
+    - Infrastructure.EF
+    - API
+    - PolicyClient
+
+
+- better ux for applications.permissions
+  - sth. like the approach of OrchardCore ID UI
+
+
+- ordering of tests
+  - clear sequence of get, create, update, delete
+
+
+- applications management
+  - client_secret only allowed for ClientTypes.Confidential clients
+    distinguish between public / confidential clients
+  - client_secret issuing flow
+    - for confidential clients a client secret can be issued
+      - hash shoud not be visible in UI
+
+
+- ??? authorizations, tokens
+
+----------------------------------------------------------------------------------------------------
+EF:
+- Contexts:
+  - ApplicationDbContext
+  - OpenIddictUIContext
+
+- dotnet ef migrations add Initial -c ApplicationDbContext -o Models/Data
+- dotnet ef migrations add InitialUI -c OpenIddictUIContext -o Models/Data/UI
+- dotnet ef migrations add InitialIdentity -c OpenIddictUIIdentityContext -o Models/Data/Identity
+
+----------------------------------------------------------------------------------------------------
+Tests:
+- dotnet test /p:ParallelizeTestCollections=false /p:CollectCoverage=true /p:Include=[tomware.*]tomware.OpenIddict.UI.* /p:CoverletOutputFormat=lcov /p:CoverletOutput=./../lcov
+
+----------------------------------------------------------------------------------------------------
+Deploy:
+- dotnet publish samples/Server/Server.csproj -c Release -r linux-x64 --self-contained true -o publish/server/bin
+- dotnet Server.dll --environment=Development --urls "https://localhost:5001"
+
+Windows:
+- dotnet publish samples/Server/Server.csproj -c Release -r win-x64 --self-contained=true -o publish/server
+- dotnet Server.dll --environment=Development --urls "https://localhost:5001"
+
+----------------------------------------------------------------------------------------------------
+Tips:
+- dotnet tool install --global dotnet-ef
+- dotnet tool install --global dotnet-outdated-tool
+- dotnet tool install -g dotnet-format
+  export PATH="$PATH:/home/vscode/.dotnet/tools"

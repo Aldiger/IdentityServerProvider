@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+bin
+obj
+logs
+/api.txt
+/SignChainIdp.Api/Properties/PublishProfiles
+/SignChainIdp.Api/Properties/ServiceDependencies/signchainidp-api-dev - Web Deploy
+/SignChainIdp.Api/SignChainIdp.Api.csproj.user
+/SignChainIdp.Api/.config
+/SignChainIdp.Api/Properties/ServiceDependencies/idp-oidc-api - Web Deploy
+/SignChainIdp.Api/appsettings.AzureDevTest.json
