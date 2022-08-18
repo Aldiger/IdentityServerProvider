@@ -1,5 +1,5 @@
 using System;
-namespace SignChainIdp.Api.Helpers;
+namespace IdentityServerProvider.Api.Helpers;
 
 public static class Constants
 {

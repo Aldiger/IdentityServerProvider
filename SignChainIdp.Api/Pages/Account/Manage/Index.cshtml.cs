@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using SignChainIdp.Api.Models;
+using IdentityServerProvider.Api.Models;
 
-namespace SignChainIdp.Api.Pages.Account.Manage;
+namespace IdentityServerProvider.Api.Pages.Account.Manage;
 
 public partial class IndexModel : PageModel
 {

@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using OpenIddict.Abstractions;
-using SignChainIdp.Api.Models;
+using IdentityServerProvider.Api.Models;
 using OpenIddict.UI.Identity.Infrastructure;
 using OpenIddict.UI.Infrastructure;
 using OpenIddict.UI.Suite.Core;
-using SignChainIdp.Api.Helpers.AppsettingConfigurationDto;
+using IdentityServerProvider.Api.Helpers.AppsettingConfigurationDto;
 using Microsoft.Extensions.Options;
 
-namespace SignChainIdp.Api.Services;
+namespace IdentityServerProvider.Api.Services;
 
 public interface IMigrationService
 {

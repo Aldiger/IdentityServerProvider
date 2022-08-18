@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SignChainIdp.Api.Models;
+using IdentityServerProvider.Api.Models;
 
 #nullable disable
 
-namespace SignChainIdp.Api.Models.Data
+namespace IdentityServerProvider.Api.Models.Data
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20220716133342_Initial")]

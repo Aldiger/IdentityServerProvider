@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace SignChainIdp.Api.Pages.Account;
+namespace IdentityServerProvider.Api.Pages.Account;
 
 [AllowAnonymous]
 public class LockoutModel : PageModel

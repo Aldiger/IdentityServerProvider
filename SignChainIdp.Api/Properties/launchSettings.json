@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "SignChainIdp.Api": {
+    "IdentityServerProvider.Api": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
@@ -17,7 +17,7 @@
       "applicationUrl": "https://localhost:5001",
       "dotnetRunMessages": true
     },
-    "SignChainIdp.Api.Azure": {
+    "IdentityServerProvider.Api.Azure": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

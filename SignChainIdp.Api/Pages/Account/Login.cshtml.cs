@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using SignChainIdp.Api.Models;
+using IdentityServerProvider.Api.Models;
 
-namespace SignChainIdp.Api.Pages.Account;
+namespace IdentityServerProvider.Api.Pages.Account;
 
 [AllowAnonymous]
 public class LoginModel : PageModel

@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace SignChainIdp.Api.Helpers
+namespace IdentityServerProvider.Api.Helpers
 {
     public static class MiddlewareExtension
     {

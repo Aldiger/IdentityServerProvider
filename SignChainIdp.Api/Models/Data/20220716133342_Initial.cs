@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace SignChainIdp.Api.Models.Data
+namespace IdentityServerProvider.Api.Models.Data
 {
     public partial class Initial : Migration
     {

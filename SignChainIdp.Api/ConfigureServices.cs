@@ -4,19 +4,19 @@ using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Quartz;
-using SignChainIdp.Api.Models;
-using SignChainIdp.Api.Services;
+using IdentityServerProvider.Api.Models;
+using IdentityServerProvider.Api.Services;
 using OpenIddict.UI.Api;
 using OpenIddict.UI.Identity.Api;
 using OpenIddict.UI.Identity.Infrastructure;
 using OpenIddict.UI.Infrastructure;
 using static OpenIddict.Abstractions.OpenIddictConstants;
-using SignChainIdp.Api.Helpers.AppsettingConfigurationDto;
+using IdentityServerProvider.Api.Helpers.AppsettingConfigurationDto;
 using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 
-namespace SignChainIdp.Api;
+namespace IdentityServerProvider.Api;
 
 public static class ConfigureServices
 {

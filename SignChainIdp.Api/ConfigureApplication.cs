@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Rewrite;
-using SignChainIdp.Api.Helpers;
+using IdentityServerProvider.Api.Helpers;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using System.Net;
 
-namespace SignChainIdp.Api;
+namespace IdentityServerProvider.Api;
 
 public static class ConfigureApplication
 {

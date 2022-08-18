@@ -8,7 +8,7 @@ using OpenIddict.UI.Infrastructure;
 
 #nullable disable
 
-namespace SignChainIdp.Api.Models.Data.UI
+namespace IdentityServerProvider.Api.Models.Data.UI
 {
     [DbContext(typeof(OpenIddictUIContext))]
     partial class OpenIddictUIContextModelSnapshot : ModelSnapshot

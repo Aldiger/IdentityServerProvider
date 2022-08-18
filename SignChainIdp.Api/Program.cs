@@ -1,6 +1,6 @@
 using Serilog;
-using SignChainIdp.Api;
-using SignChainIdp.Api.Services;
+using IdentityServerProvider.Api;
+using IdentityServerProvider.Api.Services;
 
 var loggerConfiguration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")

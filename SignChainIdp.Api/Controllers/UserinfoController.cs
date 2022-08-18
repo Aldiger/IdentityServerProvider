@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using OpenIddict.Abstractions;
 using OpenIddict.Server.AspNetCore;
-using SignChainIdp.Api.Models;
+using IdentityServerProvider.Api.Models;
 using static OpenIddict.Abstractions.OpenIddictConstants;
 
-namespace SignChainIdp.Api.Controllers;
+namespace IdentityServerProvider.Api.Controllers;
 
 [Produces("application/json")]
 [ApiExplorerSettings(GroupName = "sample-server")]

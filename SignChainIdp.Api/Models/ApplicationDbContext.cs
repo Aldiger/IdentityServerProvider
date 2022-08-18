@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace SignChainIdp.Api.Models;
+namespace IdentityServerProvider.Api.Models;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {

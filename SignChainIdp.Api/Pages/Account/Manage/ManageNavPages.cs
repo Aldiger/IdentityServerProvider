@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace SignChainIdp.Api.Pages.Account.Manage;
+namespace IdentityServerProvider.Api.Pages.Account.Manage;
 
 public static class ManageNavPages
 {

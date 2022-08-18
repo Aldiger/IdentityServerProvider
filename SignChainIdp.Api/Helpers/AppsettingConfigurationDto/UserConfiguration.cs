@@ -1,4 +1,4 @@
-﻿namespace SignChainIdp.Api.Helpers.AppsettingConfigurationDto
+﻿namespace IdentityServerProvider.Api.Helpers.AppsettingConfigurationDto
 {
     public class UserConfiguration
     {

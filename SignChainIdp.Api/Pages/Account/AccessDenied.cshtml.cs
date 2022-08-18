@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace SignChainIdp.Api.Pages.Account;
+namespace IdentityServerProvider.Api.Pages.Account;
 
 public class AccessDeniedModel : PageModel
 {

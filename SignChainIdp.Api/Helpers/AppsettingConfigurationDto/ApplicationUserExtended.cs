@@ -1,6 +1,6 @@
-﻿using SignChainIdp.Api.Models;
+﻿using IdentityServerProvider.Api.Models;
 
-namespace SignChainIdp.Api.Helpers.AppsettingConfigurationDto
+namespace IdentityServerProvider.Api.Helpers.AppsettingConfigurationDto
 {
     public class ApplicationUserExtended : ApplicationUser
     {

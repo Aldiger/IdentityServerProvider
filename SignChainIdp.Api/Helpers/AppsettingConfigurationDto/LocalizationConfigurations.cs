@@ -1,7 +1,7 @@
 ﻿using OpenIddict.Abstractions;
 using System.Globalization;
 
-namespace SignChainIdp.Api.Helpers.AppsettingConfigurationDto
+namespace IdentityServerProvider.Api.Helpers.AppsettingConfigurationDto
 {
     public class LocalizationConfiguration
     {

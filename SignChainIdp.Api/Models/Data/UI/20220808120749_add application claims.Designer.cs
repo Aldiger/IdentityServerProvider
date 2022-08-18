@@ -9,7 +9,7 @@ using OpenIddict.UI.Infrastructure;
 
 #nullable disable
 
-namespace SignChainIdp.Api.Models.Data.UI
+namespace IdentityServerProvider.Api.Models.Data.UI
 {
     [DbContext(typeof(OpenIddictUIContext))]
     [Migration("20220808120749_add application claims")]

@@ -12,12 +12,12 @@ using OpenIddict.Abstractions;
 using OpenIddict.Server.AspNetCore;
 using OpenIddict.UI.Identity.Core;
 using OpenIddict.UI.Infrastructure;
-using SignChainIdp.Api.Helpers;
-using SignChainIdp.Api.Helpers.AppsettingConfigurationDto;
-using SignChainIdp.Api.Models;
+using IdentityServerProvider.Api.Helpers;
+using IdentityServerProvider.Api.Helpers.AppsettingConfigurationDto;
+using IdentityServerProvider.Api.Models;
 using static OpenIddict.Abstractions.OpenIddictConstants;
 
-namespace SignChainIdp.Api;
+namespace IdentityServerProvider.Api;
 
 [ApiExplorerSettings(GroupName = "sample-server")]
 public class AuthorizationController : Controller

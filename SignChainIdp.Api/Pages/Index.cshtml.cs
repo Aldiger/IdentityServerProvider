@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace SignChainIdp.Api.Pages;
+namespace IdentityServerProvider.Api.Pages;
 
 public class IndexModel : PageModel
 {
