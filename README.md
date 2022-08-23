@@ -4,7 +4,7 @@
 
 ## About
 
-Identity Server Provider using:
+Identity Server Provider API using:
 
 1. Microsoft.AspNetCore.Identity (to manage users)
 2. OpenIddict (to manage tokens)
